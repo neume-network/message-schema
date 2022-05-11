@@ -1,6 +1,6 @@
 {
   "name": "@music-os/message-schema",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "music-os shared message-schema across its components.",
   "main": "./src/index.mjs",
   "scripts": {
