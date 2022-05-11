@@ -111,3 +111,61 @@ export const exit = {
     },
   },
 };
+
+export const transformation = {
+  type: "object",
+  required: ["type", "version", "name", "args", "results", "error"],
+  properties: {
+    type: {
+      type: "string",
+      enum: ["transformation"],
+    },
+    version: {
+      type: "string",
+    },
+    name: {
+      type: "string",
+    },
+    args: {
+      type: "array",
+      nullable: true,
+    },
+    results: {
+      type: "object",
+      nullable: true,
+    },
+    error: {
+      type: "string",
+      nullable: true,
+    },
+  },
+};
+
+export const extraction = {
+  type: "object",
+  required: ["type", "version", "name", "state", "results", "error"],
+  properties: {
+    type: {
+      type: "string",
+      enum: ["extraction"],
+    },
+    version: {
+      type: "string",
+    },
+    name: {
+      type: "string",
+    },
+    state: {
+      type: "object",
+      nullable: true,
+    },
+    results: {
+      type: "object",
+      nullable: true,
+    },
+    error: {
+      type: "string",
+      nullable: true,
+    },
+  },
+};
