@@ -1,4 +1,4 @@
-# music-os-message-schema
+# message-schema
 
 ## license
 
