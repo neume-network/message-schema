@@ -1,6 +1,6 @@
 {
   "name": "@neume-network/message-schema",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "neume-network shared message-schema across its components.",
   "main": "./src/index.mjs",
   "scripts": {
