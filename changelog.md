@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0
+
+- Add `commissioner` to all worker messages
+
 ## 0.1.1
 
 - Define type `workerMessage` and `lifecycleMessage`
