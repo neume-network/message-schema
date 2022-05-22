@@ -6,6 +6,9 @@ export const https = {
       type: "string",
       enum: ["https"],
     },
+    commissioner: {
+      type: "string",
+    },
     version: {
       type: "string",
     },
@@ -28,7 +31,7 @@ export const https = {
       nullable: true,
     },
   },
-  required: ["type", "version", "error", "results", "options"],
+  required: ["type", "commissioner", "version", "error", "results", "options"],
 };
 
 export const graphql = {
@@ -37,6 +40,9 @@ export const graphql = {
     type: {
       type: "string",
       enum: ["graphql"],
+    },
+    commissioner: {
+      type: "string",
     },
     version: {
       type: "string",
@@ -59,7 +65,7 @@ export const graphql = {
       nullable: true,
     },
   },
-  required: ["type", "version", "options", "results", "error"],
+  required: ["type", "commissioner", "version", "options", "results", "error"],
 };
 
 export const jsonrpc = {
@@ -68,6 +74,9 @@ export const jsonrpc = {
     type: {
       type: "string",
       enum: ["json-rpc"],
+    },
+    commissioner: {
+      type: "string",
     },
     version: {
       type: "string",
@@ -95,7 +104,15 @@ export const jsonrpc = {
     },
   },
   // TODO: Require `error`
-  required: ["type", "method", "params", "results", "version", "options"],
+  required: [
+    "type",
+    "commissioner",
+    "method",
+    "params",
+    "results",
+    "version",
+    "options",
+  ],
 };
 
 export const exit = {
