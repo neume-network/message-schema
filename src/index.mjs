@@ -169,3 +169,11 @@ export const extraction = {
     },
   },
 };
+
+export const workerMessage = {
+  oneOf: [https, graphql, jsonrpc, exit],
+};
+
+export const lifecycleMessage = {
+  oneOf: [extraction, transformation],
+};
