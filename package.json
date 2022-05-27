@@ -4,7 +4,7 @@
   "description": "neume-network shared message-schema across its components.",
   "main": "./src/index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/neume-network/message-schema/issues"
   },
-  "homepage": "https://github.com/neume-network/message-schema#readme"
+  "homepage": "https://github.com/neume-network/message-schema#readme",
+  "devDependencies": {
+    "ava": "4.2.0"
+  }
 }

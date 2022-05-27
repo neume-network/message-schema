@@ -129,13 +129,17 @@ export const exit = {
   },
 };
 
-export const transformation = {
+export const workerMessage = {
+  oneOf: [https, graphql, jsonrpc, exit],
+};
+
+export const lifecycleMessage = {
   type: "object",
-  required: ["type", "version", "name", "args", "results", "error"],
+  required: ["type", "version", "name", "args"],
   properties: {
     type: {
       type: "string",
-      enum: ["transformation"],
+      enum: ["transformation", "extraction"],
     },
     version: {
       type: "string",
@@ -147,50 +151,5 @@ export const transformation = {
       type: "array",
       nullable: true,
     },
-    results: {
-      type: "object",
-      nullable: true,
-    },
-    error: {
-      type: "string",
-      nullable: true,
-    },
   },
-};
-
-export const extraction = {
-  type: "object",
-  required: ["type", "version", "name", "state", "results", "error"],
-  properties: {
-    type: {
-      type: "string",
-      enum: ["extraction"],
-    },
-    version: {
-      type: "string",
-    },
-    name: {
-      type: "string",
-    },
-    state: {
-      type: "object",
-      nullable: true,
-    },
-    results: {
-      type: "object",
-      nullable: true,
-    },
-    error: {
-      type: "string",
-      nullable: true,
-    },
-  },
-};
-
-export const workerMessage = {
-  oneOf: [https, graphql, jsonrpc, exit],
-};
-
-export const lifecycleMessage = {
-  oneOf: [extraction, transformation],
 };
