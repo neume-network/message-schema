@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- From `extraction` message, remove `results`, `error` and `state` property.
+  Add `args` list.
+- From `transformation` message, remove `results`, `error`.
+
 ## 0.2.0
 
 - Add `commissioner` to all worker messages
