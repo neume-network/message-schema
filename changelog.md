@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.1
+
+Add `timeout` (milliseconds)  to https and json-rpc message type
+
 ## 0.3.0
 
 - From `extraction` message, remove `results`, `error` and `state` property.
