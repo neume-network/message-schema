@@ -15,6 +15,10 @@ export const https = {
     options: {
       type: "object",
       properties: {
+        timeout: {
+          $comment: "temporal unit is milliseconds",
+          type: "integer",
+        },
         url: { type: "string" },
         method: { type: "string" },
         body: { type: "string" },
@@ -84,6 +88,10 @@ export const jsonrpc = {
     options: {
       type: "object",
       properties: {
+        timeout: {
+          $comment: "temporal unit is milliseconds",
+          type: "integer",
+        },
         url: { type: "string" },
       },
       required: ["url"],
