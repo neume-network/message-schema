@@ -3,7 +3,6 @@ Neume-network's internal message JSON schema.
 
 ## Requirements to contribute
 1. [Node JS](https://nodejs.org/)
-2. [React JS](https://reactjs.org/)
 
 ## Contributing
 1. [Fork](https://github.com/neume-network/message-schema/fork) the project
