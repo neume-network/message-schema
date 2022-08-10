@@ -15,7 +15,7 @@ Neume-network's internal message JSON schema.
   ```bash
   cd message-schema
   ```
-4. Install the neccassry dependencies
+4. Install the neccassary dependencies
   ```bash
   npm install
   ```
