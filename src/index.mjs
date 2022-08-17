@@ -140,24 +140,3 @@ export const exit = {
 export const workerMessage = {
   oneOf: [https, graphql, jsonrpc, exit],
 };
-
-export const lifecycleMessage = {
-  type: "object",
-  required: ["type", "version", "name", "args"],
-  properties: {
-    type: {
-      type: "string",
-      enum: ["transformation", "extraction"],
-    },
-    version: {
-      type: "string",
-    },
-    name: {
-      type: "string",
-    },
-    args: {
-      type: "array",
-      nullable: true,
-    },
-  },
-};
